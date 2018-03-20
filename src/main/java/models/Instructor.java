@@ -46,7 +46,6 @@ public class Instructor {
     @JoinTable(name = "instructor_course",
             joinColumns = {@JoinColumn(name = "instructor_id", nullable = false, updatable = false)},
             inverseJoinColumns = {@JoinColumn(name = "course_id", nullable = false, updatable = false)})
-
     public Set<Course> getCourses() {
         return courses;
     }

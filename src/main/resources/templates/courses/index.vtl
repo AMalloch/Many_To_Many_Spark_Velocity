@@ -1,0 +1,21 @@
+<p class ="pageHeader"> All Courses</p>
+
+<div class="container">
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Level</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+        </tr>
+        #foreach($course in $courses)
+        <tr>
+            <td>$course.getTitle()</td>
+            <td>$course.getLevel()</td>
+            <td>$course.getStartDate()</td>
+            <td>$course.getEndDate()</td>
+        </tr>
+        #end
+
+    </table>
+</div>

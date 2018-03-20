@@ -29,7 +29,7 @@ public class DBCourse {
         }
     }
 
-    public static List<Course> getCourses() {
+    public static List<Course> getCourses(Class<Course> courseClass) {
         session = HibernateUtil.getSessionFactory().openSession();
         List<Course> courses = null;
         try {
